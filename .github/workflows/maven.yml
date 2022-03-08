@@ -27,3 +27,17 @@ jobs:
       
     - name: list directory
       run: ls -l ; pwd ;ls -l target/
+      
+    - name: Build and Push Docker Image
+      uses: mr-smithers-excellent/docker-build-push@v5
+      with:
+        image: dinesh24591/hello-world-spring-boot
+        registry: docker.io
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+      
+      
+      
+      
+      
+      
