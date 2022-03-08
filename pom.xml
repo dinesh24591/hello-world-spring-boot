@@ -35,6 +35,14 @@
                         <image>registry.hub.docker.com/dinesh24591/hello-world-spring-boot</image>
                     </to>
                 </configuration>
+                  <executions>
+                     <execution>
+                        <phase>package</phase>
+                        <goals>
+                         <goal>build</goal>
+                        </goals>
+                     </execution>
+                  </executions>
             </plugin>
 
         </plugins>
