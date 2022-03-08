@@ -26,4 +26,4 @@ jobs:
       run: mvn -B package --file pom.xml
       
     - name: list directory
-      run: ls -l ; pwd
+      run: ls -l ; pwd ;ls -l target/
