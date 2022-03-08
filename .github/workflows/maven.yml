@@ -37,8 +37,5 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
       
       
-    - name: refreh docker images
-      run: docker images dinesh24591/hello-world-spring-boot
-      
       
       
