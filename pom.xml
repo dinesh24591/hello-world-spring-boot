@@ -32,7 +32,7 @@
                 <version>3.2.0</version>
                 <configuration>
                     <to>
-                        <image>registry.hub.docker.com/dinesh24591/hello-world-spring-boot</image>
+                       <image>registry.hub.docker.com/dinesh24591/hello-world-spring-boot</image>
                     </to>
                 </configuration>
                   <executions>
