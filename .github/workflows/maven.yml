@@ -23,7 +23,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      run: mvn compile jib:dockerBuild  -Djib.to.image=dinesh24591/hello-world-spring-boot:latest -Djib.to.auth.username=$DOCKER_USERNAME -Djib.to.auth.password=$DOCKER_PASSWORD
       
     - name: list directory
       run: ls -l ; pwd ;ls -l target/
